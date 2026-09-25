@@ -11,7 +11,7 @@ EmberFrame is an AI that predicts the risk of a fire occurring in forest regions
 
 - Define the environment to run the code:
   ### Create a virtual environment:
-   - `python -m venv NAME_OF_VENV`
+   - `python -m venv EMBERFRAME/NAME_OF_VENV`
    - `NAME_OF_VENV/Scripts/activate`
   ### Install dependencies:
   `pip install -r EMBERFRAME/requirements.txt`
