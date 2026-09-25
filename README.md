@@ -36,10 +36,10 @@ EmberFrame is an AI that predicts the risk of a fire occurring in forest regions
   
 - Instructions:
   1. Create a relative folder for storing session data, e.g. `LOC`.
-  2. Configure config.py variables.
-  3. Run train_model.py to train the XGBoost Model.
-  3. Run weekly_scan.py to get a list of prone cells in the defined bounding box.
-  4. Run daily_scan.py to get a risk map of prone and high-risk cells displayed on a world map.
+  2. Configure EMBERFRAME/config.py variables.
+  3. Run EMBERFRAME/train_model.py to train the XGBoost Model.
+  3. Run EMBERFRAME/weekly_scan.py to get a list of prone cells in the defined bounding box.
+  4. Run EMBERFRAME/daily_scan.py to get a risk map of prone and high-risk cells displayed on a world map.
  
 - Further steps:
   - Train a new model every time a new bounding box is defined
