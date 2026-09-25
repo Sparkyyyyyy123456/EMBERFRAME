@@ -32,7 +32,7 @@ EmberFrame is an AI that predicts the risk of a fire occurring in forest regions
 ## Running the code:
 
 - Order:
-  config.py < train_model.py < weekly_scan.py < daily_scan.py
+  config.py -> train_model.py -> weekly_scan.py -> daily_scan.py
   
 - Instructions:
   1. Create a relative folder for storing session data, e.g. `LOC`.
