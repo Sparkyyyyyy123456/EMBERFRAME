@@ -1,0 +1,6 @@
+pandas==3.0.3
+numpy==2.5.0
+requests==2.34.2
+xgboost==3.4.1
+scikit-learn==1.9.1
+folium==0.20.0
