@@ -17,18 +17,19 @@ EmbereFrame is an AI that predicts the risk of a fire occurring in forest region
   `pip install -r requirements.txt`
 
 - Configuration:
-| Parameter                              | Meaning                                                                                         |
-| -------------------------------------- | ----------------------------------------------------------------------------------------------- |
-|  BBOX                                  | Bounding box of the region (lon‑min, lat‑min, lon‑max, lat‑max).                                |
-|  SATELLITE_SOURCES                     | List of FIRMS product IDs to query, e.g. `['VIIRS_NOAA20_NRT', 'MODIS_NRT', 'MODIS_NIGHT']`.    |
-|  GRID_SIZE                             | Number of cells to divide the defined region into (Cells=GRID_SIZE^2)                           |
-|  DAYS_DATA                             | Days of fire and weather data to pull                                                           |
-|  PRONE_THRESHOLD                       | AI probability cut‑off for weekly “prone” flag.                                                 |
-|  HIGHRISK_THRESHOLD                    | Daily probability cut‑off for high‑risk cells.                                                  |
-|  HOT_THRESHOLD` / `DRY_THRESHOLD       | Domain‑expert thresholds for temperature and precipitation.                                     |
-|  STD_DEV_LIMIT                         | Volatility trigger for extreme sampling.                                                        |
-|  MAP_KEY                               | Go to https://firms.modaps.eosdis.nasa.gov/api/map_key/ to get a free key                       |
-| Paths (`LOC`, `MODEL`, …)              | Relative paths for data and model files.                                                        |
+| Parameter          | Meaning                                                                                                 |
+|--------------------|----------------------------------------------------------------------------------------------------------|
+| **BBOX**           | Bounding box of the region (lon‑min, lat‑min, lon‑max, lat‑max).                                         |
+| **SATELLITE_SOURCES** | List of FIRMS product IDs to query, e.g. `['VIIRS_NOAA20_NRT', 'MODIS_NRT', 'MODIS_NIGHT']`.          |
+| **GRID_SIZE**      | Number of cells per side; total cells = `GRID_SIZE²`.                                                    |
+| **DAYS_DATA**      | Number of days of fire and weather data to pull.                                                          |
+| **PRONE_THRESHOLD**| AI probability cut‑off for the weekly “prone” flag.                                                     |
+| **HIGHRISK_THRESHOLD** | Daily probability cut‑off for high‑risk cells.                                                       |
+| **HOT_THRESHOLD / DRY_THRESHOLD** | Domain‑expert thresholds for temperature and precipitation.                              |
+| **STD_DEV_LIMIT**  | Volatility trigger for extreme sampling.                                                                 |
+| **MAP_KEY**        | Free API key – obtain from <https://firms.modaps.eosdis.nasa.gov/api/map_key/>.                          |
+| **Paths (`LOC`, `MODEL`, …)** | Relative paths for data, model, and other output files.                                           |
+
 
 ## License & Credits
 - This code is open-source and completely free to use, made using FLOSS tools.
