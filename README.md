@@ -46,7 +46,7 @@ EmberFrame is an AI that predicts the risk of a fire occurring in forest regions
   - Run weekly_scan.py once a week
   - Run daily_scan.py once a day
 
-## License & Credits
+## License & Credits:
 - This code is open-source and completely free to use, made using FLOSS tools.
 - NASA FIRMS and Open‑Meteo provide the underlying data.
 - The XGBoost model and folium map rendering are courtesy of their respective open‑source communities.
