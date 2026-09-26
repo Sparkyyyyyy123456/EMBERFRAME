@@ -18,7 +18,7 @@ EmberFrame is an AI that predicts the risk of a fire occurring in forest regions
 
 - Configuration:
 
-  - **BBOX** - Bounding box of the region (lon‑min, lat‑min, lon‑max, lat‑max) - obtain from <https://bboxfinder.com/#0.000000,0.000000,0.000000,0.000000>
+  - **BBOX** - Bounding box of the region (lon‑min, lat‑min, lon‑max, lat‑max) - obtain from <https://bboxfinder.com>
   - **SATELLITE_SOURCES** - List of FIRMS product IDs to query, e.g. `['VIIRS_NOAA20_NRT', 'MODIS_NRT', 'MODIS_NIGHT']`.
   - **GRID_SIZE** - Number of cells per side; total cells = `GRID_SIZE²`.
   - **DAYS_DATA** - Number of days of fire and weather data to pull.
